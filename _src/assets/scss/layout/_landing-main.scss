@@ -1,0 +1,72 @@
+.landing__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__main--title {
+  font-family: "Merriweather", serif;
+  color: #e17334;
+  font-size: 19px;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.landing__main--description {
+  font-family: 'Open Sans', sans-serif;
+  color: #114e4e;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 17px;
+  width: 268px;
+  //Es recomendable darle ancho a los elementos? Creo que Nasiba dijo que no :/
+  @media all and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 25px;
+    width: 331px;
+  }
+}
+
+.landing__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 39px;
+  border: solid 2px rgba(225, 115, 52, 0.21);
+  border-radius: 5px;
+  height: 74px;
+  width: 268px;
+  //Es recomendable darle ancho a los elementos? Creo que Nasiba dijo que no :/
+  @media all and (min-width: 768px) {
+    height: 86px;
+    width: 325px;
+    margin-bottom: 186px;
+  }
+  .landing__list--img {
+    color: #e17334;
+    font-size: 22px;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
+    }
+  }
+  
+  .landing__list--text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #54585a;
+    text-align: center;
+    margin: 0;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
