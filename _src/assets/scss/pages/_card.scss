@@ -1,0 +1,124 @@
+.section__card {
+    height: 457px;
+    background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    @media all and (min-width: 768px) {
+        width: 329px;
+        height: 812px;
+    }
+
+    @media all and (min-width: 1024px) {
+        width: 585px;
+        height: 812px;
+    }
+}
+
+.card__reset {
+    width: 75px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 38px auto 20px;
+    transform: translate(-100%);
+    color: #54585a;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: $fontOpenSans;
+    font-weight: $open-sans-reg;
+    font-size: 12px;
+    line-height: 20px;
+
+    @media all and (min-width: 768px) {
+        margin: 173px auto 20px;
+    }
+
+    @media all and (min-width: 1024px) {
+        margin: 223px auto 20px;
+    }
+}
+
+.card__box {
+    border: 1px solid green;
+    width: 240px;
+    height: 329px;
+    background-color: white;
+    border-radius: 2px;
+    // box-shadow: rgba(0, 0, 0, 0.2)
+}
+
+.card__name {
+    font-family: $fontMontse;
+    font-weight: $montse-bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #114e4e;
+    margin: 21px 14px 4px 20px;
+}
+
+.card__job-title {
+    font-family: $fontMontse;
+    font-weight: $montse-reg;
+    font-size: 16px;
+    line-height: 20px;
+    color: #54585a;
+    margin: 0 auto 10px 20px;
+}
+
+.rectangle {
+    width: 5px;
+    height: 42px;
+    background-color: $green;
+    position: absolute;
+    top: 111px;
+
+    @media all and (min-width: 768px) {
+        top: 246px;
+    }
+    @media all and (min-width: 1020px) {
+        top: 296px;
+    }
+}
+
+.card__photo {
+    width: 100 vw;
+    height: 200px;
+    display: block;
+}
+
+.card__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px auto 12px 15px; 
+}
+
+.list__item {
+    border: 2px solid $green;
+    width: 32px;
+    height: 0;
+    line-height: 32px;
+    color: #114e4e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 0 5px;
+
+}
+
+.list__mobile {}
+
+.list__email {}
+
+.list__linkedin {}
+
+.list__github {}
