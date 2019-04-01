@@ -1,9 +1,36 @@
 <article class="settings__fill">
-        <div class="fill__title">
-            <i src="" alt="" class="fill__title--img">
-            <h2 class="fill__title--name">Rellena</h2>
-        </div>
-        <div class="fill__options">
-            <form action="" class="fill__form"></form>
-        </div>
-    </article>
+    <div class="fill__title">
+        <i class="far fa-keyboard"></i>
+        <h2 class="fill__title--name">Rellena</h2>
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <div class="fill__form">
+        <form action="" method="post">
+            <fieldset class="personal-data">
+                <label for="fullName">Nombre completo</label>
+                <input placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName">
+
+                <label for="jobTitle">Puesto</label>
+                <input placeholder="Ej: Front-end unicorn" id="jobTitle" type="text" name="jobTitle">
+            </fieldset>
+            <fieldset class="select-image">
+                <label for="selectImage">Imagen de perfil</label>
+                <input id="selectImage" type="file" accept=".png, .jpg, .jpeg" name="selectImage">
+                <input id="checkbox" type="checkbox" name="selectImage">
+            </fieldset>
+            <fieldset class="contact-data">
+                <label for="email">Email</label>
+                <input placeholder="Ej: sally-hill@gmail.com" id="email" type="email" name="email">
+
+                <label for="phone">Teléfono</label>
+                <input placeholder="Ej: 555-55-55-55" id="phone" type="tel" name="phone">
+
+                <label for="linkedin">Linkedin</label>
+                <input placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" type="text" name="linkedin">
+
+                <label for="github">Github</label>
+                <input placeholder="Ej: @sally-hill" id="github" type="text" name="github">
+            </fieldset>
+        </form>
+    </div>
+</article>
