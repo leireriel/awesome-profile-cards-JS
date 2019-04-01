@@ -5,16 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Card</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
   <partial src="_header.html"></partial>
   <main class="card__main">
     <section class="section__settings">
-      <partial src="_card-design.html"></partial>
-      <partial src="_card-fill.html"></partial>
-      <partial src="_card-share.html"></partial>
+      <div class="wrapper-card">
+        <partial src="_card-design.html"></partial>
+        <partial src="_card-fill.html"></partial>
+        <partial src="_card-share.html"></partial>
+      </div>
     </section>
     <section class="section__card">
       <partial src="_card-preview.html"></partial>

@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+.wrapper-card {
+  margin: 0 20px;
+  @media all and (min-width: 768px) {
+   margin: 0 30px 0 40px;
+  }
+}
+
+.section__settings {
+  padding-bottom: 30px;
+}
