@@ -1,9 +1,26 @@
+.settings__fill {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.fill__first-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    margin: 10px 0 25px;
+}
 .fill__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid green;
+}
+.fill__title--name {
+    margin: 0 0 0 10px;
 }
 .fill__form input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     display: block;
     margin-bottom: 20px;
+    width: 100%;
 }
