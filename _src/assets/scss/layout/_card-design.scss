@@ -1,0 +1,54 @@
+label{}
+
+.settings__design {
+    font-family: $fontOpenSans;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.design__title{
+    color: $grey;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.design__title--img{}
+
+.design__title--name{
+    margin-bottom: 0%;
+}
+.design__title--colors{
+    color: $grey;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.desidn__radio{
+    margin-right: 10px;
+}
+.design__palette{
+    display: flex;
+    align-items: center;
+    justify-content: flex end;
+    align-content: center;
+    margin-bottom: 10px;  
+    margin-left: 163px;  
+}
+.design__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.list__color{
+    width: 30px;
+    height: 0px;
+    overflow:hidden;
+    padding-top: 25px;
+}
+hr{
+    height: 0.5px;
+    background-color: black;
+    width: 100%;
+    margin-top: 30px;
+}
+#color1{}
+#color2{}
+#color3{}
