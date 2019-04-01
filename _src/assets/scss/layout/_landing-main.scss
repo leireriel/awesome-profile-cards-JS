@@ -23,12 +23,12 @@
   font-size: 13px;
   text-align: center;
   margin-bottom: 17px;
-  width: 268px;
+  max-width: 268px;
   //Es recomendable darle ancho a los elementos? Creo que Nasiba dijo que no :/
   @media all and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 25px;
-    width: 331px;
+    max-width: 331px;
   }
 }
 
@@ -42,12 +42,12 @@
   margin-bottom: 39px;
   border: solid 2px rgba(225, 115, 52, 0.21);
   border-radius: 5px;
-  height: 74px;
-  width: 268px;
-  //Es recomendable darle ancho a los elementos? Creo que Nasiba dijo que no :/
+  padding: 20px;
+  max-width: 268px;
   @media all and (min-width: 768px) {
-    height: 86px;
-    width: 325px;
+    max-width: 325px;
+    padding: 25px;
+    // padding irregulares?
     margin-bottom: 186px;
   }
   .landing__list--img {
