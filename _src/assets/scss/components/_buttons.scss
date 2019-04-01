@@ -1,0 +1,20 @@
+.landing__main--link-container {
+  display: flex;
+  justify-content: center;
+}
+.landing__main--link {
+  background-color: #438792;
+  border-radius: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  @media all and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+}

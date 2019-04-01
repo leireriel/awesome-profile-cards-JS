@@ -1,5 +1,5 @@
 .footer-container {
-    border: 1px solid #d8d8d8;;
+    border: 1px solid $medium-grey;
 }
 
 .footer-container__wraper {
@@ -20,7 +20,7 @@
     font-weight: $open-sans-reg;
     line-height: 20px;
     margin: 19px 0 11px;
-    color: #6b6b6b;
+    color: $grey-footer;
     opacity: 0.5;
 }
 
