@@ -1,0 +1,48 @@
+//Header Landing
+.header__logo-container {
+    background:#f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding-top: 95px;
+    margin-bottom: 35px;
+    @media all and (min-width:768px) {
+      padding-top: 350px;
+      margin-bottom: 31px;
+    }
+  }
+  .header__logo {
+    background: url('../images/awesome-logo.svg') center center no-repeat;
+    background-size: contain;
+    height: 0;
+    overflow: hidden;
+    padding-top: 95px;
+    width: 250px;
+    @media all and (min-width:768px) {
+      width: 420px;
+    }
+  }
+  /*
+  //Header Cards (crear otro parcial???)
+  .page-card .header__card .wrapper { //página de cards y el wrapper
+    margin: 0 30px;
+    @media all and (min-width: 768px) {
+      margin: 0 40px;
+    }
+  }
+  .page-card .header__card .header__logo-container {
+    background: #ffffff;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+  .page-card .header__card .header__logo {
+    width: 201px;
+    height: 50px;
+    margin-top: 0;
+  }
+  */
+  
