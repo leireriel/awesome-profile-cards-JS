@@ -4,25 +4,51 @@ label{}
     font-family: $fontOpenSans;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 27px;
+    display: flex;
+}
+.design__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .design__title{
     color: $grey;
     font-size: 16px;
     text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+    height: 30px;;
 }
-.design__title--img{
+.design__img{ 
     color: #e17334;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
+    width: 30px;
+    height: 25px;
+    margin-right: 5px;
 }
-
 .design__title--name{
+    margin-top: 0%;
     margin-bottom: 0%;
+    width: 150px;
+    height: 40px;
 }
 .design__title--colors{
-    color: $grey;
     font-size: 12px;
-    text-transform: uppercase;
+    width: 120px;
+    height: 40px;
+    margin: 0%;
+}
+.design__container--palette{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 140px;
+    height: 115px;
+    margin-top: 60px;
+
 }
 .desidn__radio{
     margin-right: 10px;
@@ -33,7 +59,7 @@ label{}
     justify-content: flex end;
     align-content: center;
     margin-bottom: 10px;  
-    margin-left: 163px;  
+   margin-left: 40px;
 }
 .design__list{
     list-style: none;
@@ -51,7 +77,7 @@ hr{
     height: 0.5px;
     background-color: black;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 200px;
 }
 #color1{}
 #color2{}
