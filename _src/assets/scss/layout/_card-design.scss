@@ -1,5 +1,3 @@
-label{}
-
 .settings__design {
     font-family: $fontOpenSans;
     margin-left: 20px;
@@ -36,19 +34,22 @@ label{}
     height: 40px;
 }
 .design__title--colors{
-    font-size: 12px;
-    width: 120px;
+    color: $grey;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 60px;
     height: 40px;
     margin: 0%;
+    margin-left: 20px;
 }
 .design__container--palette{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     width: 140px;
     height: 115px;
-    margin-top: 60px;
-
+    margin-top: 40px;
+    margin-left: 12px;
 }
 .desidn__radio{
     margin-right: 10px;
@@ -58,8 +59,7 @@ label{}
     align-items: center;
     justify-content: flex end;
     align-content: center;
-    margin-bottom: 10px;  
-   margin-left: 40px;
+    margin-bottom: 10px;    
 }
 .design__list{
     list-style: none;
@@ -73,12 +73,10 @@ label{}
     overflow:hidden;
     padding-top: 25px;
 }
-hr{
-    height: 0.5px;
+.design__line{
+    height: 1px;
     background-color: black;
     width: 100%;
     margin-top: 200px;
 }
-#color1{}
-#color2{}
-#color3{}
+
