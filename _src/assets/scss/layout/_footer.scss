@@ -1,12 +1,18 @@
 .footer-container {
+    border: 1px solid #d8d8d8;;
+}
+
+.footer-container__wraper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     @media all and (min-width: 768px) {
+        margin: 0 40px;
         flex-direction: row;
-    }  
+        justify-content: space-between;
+    }
 }
 
 .footer__text {
@@ -16,10 +22,6 @@
     margin: 19px 0 11px;
     color: #6b6b6b;
     opacity: 0.5;
-
-    @media all and (min-width: 768px) {
-        margin: 19px 386px 21px 0;
-    }
 }
 
 .footer__link {}
