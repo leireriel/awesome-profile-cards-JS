@@ -1,0 +1,148 @@
+// .card__main {
+//     display: flex;
+//     flex-direction: column-reverse;
+
+//     @media all and (min-width: 768px) {
+//         padding: 23px 40px 20px;
+//         background-image: linear-gradient(to bottom, #f5f5f5, white); 
+//         display: grid;
+//         grid-template-columns: 399px 1fr;
+//         grid-gap: 30px;
+//     }
+// }
+
+.settings {
+}
+
+.section__card {
+    height: 457px;
+    background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media all and (min-width: 768px) {
+        border-radius: 6px;
+        height: 812px;
+    }
+}
+
+.card__reset {
+    width: 75px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: #54585a;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: $fontOpenSans;
+    font-weight: $open-sans-reg;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: -56px;
+}
+
+.fa-trash-alt {
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.card__box {
+    width: 240px;
+    height: 329px;
+    background-color: white;
+    border-radius: 2px; 
+    margin-top: 50px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+.card__name {
+    font-family: $fontMontse;
+    font-weight: $montse-bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #114e4e;
+    margin: 21px 14px 4px 20px;
+}
+
+.card__job-title {
+    font-family: $fontMontse;
+    font-weight: $montse-reg;
+    font-size: 16px;
+    line-height: 20px;
+    color: #54585a;
+    margin: 0 auto 10px 20px;
+}
+
+.card__rectangle {
+    width: 5px;
+    height: 42px;
+    background-color: $green;
+    position: absolute;
+    top: 23px;
+}
+
+.card__photo {
+    width: 100 vw;
+    height: 200px;
+    display: block;
+    background-image: url('https://placehold.it/240x200');
+    background-size: cover;
+}
+
+.card__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px auto 12px 15px; 
+}
+
+.list__item {
+    border: 2px solid $green;
+    width: 32px;
+    height: 0;
+    line-height: 32px;
+    color: #114e4e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 0 5px;
+}
+
+.card__list--link {
+    text-decoration: none;
+}
+
+.fa-mobile-alt {
+    font-size: 18px;
+}
+
+.fa-envelope {
+    font-size: 18px;
+}
+
+.fa-linkedin-in {
+    font-size: 18px;
+
+}
+.fa-github-alt {
+    font-size: 18px;
+}
+
+.list__mobile {}
+
+.list__email {}
+
+.list__linkedin {}
+
+.list__github {}
