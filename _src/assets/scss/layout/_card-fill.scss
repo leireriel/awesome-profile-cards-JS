@@ -16,6 +16,10 @@
 }
 .fill__title--name {
     margin: 0 0 0 10px;
+    @include titleForm();
+}
+.fill__img {
+    @include iconForm();
 }
 .fill__form input {
     display: block;
