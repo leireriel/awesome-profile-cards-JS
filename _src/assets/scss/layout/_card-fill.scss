@@ -24,10 +24,15 @@
 }
 .fill__form {
     font-family: $fontOpenSans;
+    font-weight: $open-sans-reg;
+    font-size: 14px;
     input {
         display: block;
         margin-bottom: 20px;
         width: 100%;
+        border: 1px solid $green;
+        height: 30px;
+        margin-top: 6px;
     }
     label {
         color: $dark-green;
@@ -36,3 +41,17 @@
 .fill__fieldset {
     border: 0;
 }
+.select-image {
+    display: flex;
+    flex-direction: row;
+    input {
+        width: 140px;
+        height: 30px;
+    }
+}
+.preview__image {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $green;
+}
+
