@@ -5,10 +5,9 @@
     margin-top: 27px;
     display: flex;
 }
-.design__container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.design__first-box{
+    @include boxForm();
+    text-decoration: none;
 }
 .design__title{
     @include titleForm();

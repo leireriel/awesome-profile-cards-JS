@@ -1,4 +1,5 @@
 @mixin titleForm() {
+    font-family: $fontOpenSans;
     color: $grey;
     font-size: 16px;
     text-transform: uppercase;
@@ -15,4 +16,10 @@
     width: 30px;
     height: 25px;
     margin-right: 5px;
+}
+
+@mixin boxForm() {
+    display: flex;
+    justify-content: space-between;
+   
 }
