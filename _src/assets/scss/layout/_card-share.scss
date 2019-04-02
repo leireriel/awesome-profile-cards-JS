@@ -13,9 +13,7 @@
 .share__title--img {
  font-size: 18px;
  color: #e17334;
- font-style: normal;
  margin-right: 12px;
-//  averiguar de dónde se hereda la cursiva
 }
 
 .share__title--name {
@@ -25,23 +23,18 @@
   color: #54585a;
   font-weight: 600;
   text-transform: uppercase; 
-  font-style: normal;
   flex-grow: 1;
-  //  averiguar de dónde se hereda la cursiva
 }
 
 .share__title--chevron {
   font-size: 18px;
   color: #54585a;
-  font-style: normal;
-  //  averiguar de dónde se hereda la cursiva
 }
 
 
 .share__created {
   border-top: solid 1px #d8d8d8;
   padding-top: 20px;
-  // border-bottom: solid 1px #d8d8d8;
 }
 
 .share__created--text {
