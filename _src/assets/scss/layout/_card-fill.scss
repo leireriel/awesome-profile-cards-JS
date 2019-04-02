@@ -22,6 +22,9 @@
 .fill__img {
     @include iconForm();
 }
+.arrow__fill {
+    color: $grey-dark;
+}
 .fill__form {
     font-family: $fontOpenSans;
     font-weight: $open-sans-reg;
@@ -33,6 +36,11 @@
         border: 1px solid $green;
         height: 30px;
         margin-top: 6px;
+        padding-left: 9px;
+        // placeholder {
+        //     color: $grey-soft;
+        // no se aplica
+        // }
     }
     label {
         color: $dark-green;
