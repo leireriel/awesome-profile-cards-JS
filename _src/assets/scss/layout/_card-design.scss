@@ -15,6 +15,9 @@
 .design__img{ 
     @include iconForm();
 }
+.design__arrow{
+    @include arrowForm();
+}
 .design__title--name{
     margin-top: 0%;
     margin-bottom: 0%;
@@ -32,12 +35,8 @@
 }
 .design__container--palette{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 140px;
-    height: 115px;
-    margin-top: 40px;
-    margin-left: 12px;
+    justify-content:space-between;
+    margin-top: 20px;
 }
 .desidn__radio{
     margin-right: 10px;

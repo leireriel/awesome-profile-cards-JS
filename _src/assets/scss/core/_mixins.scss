@@ -20,8 +20,7 @@
 
 @mixin boxForm() {
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between;  
 }
 
 @mixin arrowForm() {
