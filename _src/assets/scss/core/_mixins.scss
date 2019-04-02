@@ -1,4 +1,8 @@
 @mixin titleForm() {
+<<<<<<< HEAD
+=======
+    font-family: $fontOpenSans;
+>>>>>>> diseña
     color: $grey-dark;
     font-size: 16px;
     text-transform: uppercase;
@@ -9,10 +13,19 @@
 }
 
 @mixin iconForm() {
-    color: #e17334;
+    color: $orange;
     font-size: 18px;
     text-align: center;
     width: 30px;
     height: 25px;
     margin-right: 5px;
+}
+
+@mixin boxForm() {
+    display: flex;
+    justify-content: space-between;  
+}
+
+@mixin arrowForm() {
+    color:$grey-dark;
 }
