@@ -1,0 +1,18 @@
+@mixin titleForm() {
+    color: $grey;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+    height: 30px;
+}
+
+@mixin iconForm() {
+    color: #e17334;
+    font-size: 18px;
+    text-align: center;
+    width: 30px;
+    height: 25px;
+    margin-right: 5px;
+}
