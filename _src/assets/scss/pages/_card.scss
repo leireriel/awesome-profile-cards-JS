@@ -1,3 +1,19 @@
+body {
+  margin: 0;
+}
+
+.wrapper-card {
+  margin: 0 20px;
+  @media all and (min-width: 768px) {
+   margin: 0 30px 0 40px;
+  }
+}
+
+.fieldset__settings {
+  padding: 0 0 30px 0;
+  margin: 0;
+}
+
 .card__main {
     display: flex;
     flex-direction: column-reverse;

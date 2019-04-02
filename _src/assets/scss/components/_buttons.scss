@@ -8,7 +8,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
@@ -17,4 +17,59 @@
   @media all and (min-width: 768px) {
     margin-bottom: 60px;
   }
+}
+
+.share__options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share__button {
+  background-color: #e17334;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 17px;
+  margin-bottom: 30px;
+  &:hover {
+    background-color: #d5d5d5;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    @media all and (min-width: 768px) {
+      box-shadow: none;
+    }
+  }
+  .share__button--img {
+    font-size: 22px;
+    margin-right: 9px;
+  }
+}
+
+
+
+.share__created--twitter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share__created--twitter {
+  text-decoration: none;
+  background-color: #00a0f5;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  color: white;
+  padding: 4px 18px 7px 11px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.share__created--twitter-img {
+  font-size: 18px;
+  margin-right: 10px;
 }
