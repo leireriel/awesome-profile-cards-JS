@@ -21,15 +21,14 @@
       width: 420px;
     }
   }
-  /*
-  //Header Cards (crear otro parcial???)
-  .page-card .header__card .wrapper { //página de cards y el wrapper
+  /*//Header Cards 
+  .header__card { //página de cards y el wrapper
     margin: 0 30px;
     @media all and (min-width: 768px) {
       margin: 0 40px;
     }
   }
-  .page-card .header__card .header__logo-container {
+  .header__card .header__logo-container {
     background: #ffffff;
     height: 111px;
     display: flex;
@@ -39,7 +38,7 @@
       justify-content: flex-start;
     }
   }
-  .page-card .header__card .header__logo {
+  .header__card .header__logo {
     width: 201px;
     height: 50px;
     margin-top: 0;
