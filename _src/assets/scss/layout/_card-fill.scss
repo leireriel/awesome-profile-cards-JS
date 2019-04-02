@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px 0 25px;
+    text-decoration: none;
 }
 .fill__title {
     display: flex;
@@ -21,10 +22,16 @@
 .fill__img {
     @include iconForm();
 }
-.fill__form input {
-    display: block;
-    margin-bottom: 20px;
-    width: 100%;
+.fill__form {
+    font-family: $fontOpenSans;
+    input {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    label {
+        color: $dark-green;
+    }
 }
 .fill__fieldset {
     border: 0;
