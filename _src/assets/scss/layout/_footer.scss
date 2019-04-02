@@ -1,0 +1,35 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media all and (min-width: 768px) {
+        flex-direction: row;
+    }  
+}
+
+.footer__text {
+    font-family: $fontOpenSans;
+    font-weight: $open-sans-reg;
+    line-height: 20px;
+    margin: 19px 0 11px;
+    color: #6b6b6b;
+    opacity: 0.5;
+
+    @media all and (min-width: 768px) {
+        margin: 19px 386px 21px 0;
+    }
+}
+
+.footer__link {}
+
+.footer__img {
+    height: 40px;
+    margin-bottom: 20px;
+    display: block;
+
+    @media all and (min-width: 768px) {
+        margin: 0;
+    }
+}
