@@ -11,7 +11,7 @@
       padding-bottom: 31px;
     }
 }
-  .landing__body .header__logo {
+.landing__body .header__logo {
     background: url('../images/awesome-logo.svg') center center no-repeat;
     background-size: contain;
     height: 0;
@@ -23,9 +23,9 @@
       width: 420px;
       padding-top: 105px;
     }
-  }
-  //Header Cards 
-  .card__body .header__card .header__logo-container {
+}
+//Header Cards 
+.card__body .header__card .header__logo-container {
     background: #ffffff;
     display: flex;
     justify-content: flex-start;
@@ -39,8 +39,8 @@
     @media all and (min-width: 1024px) {
       padding: 31px 783px 30px 40px;
     }
-  }
-  .card__body .header__logo {
+}
+.card__body .header__logo {
     background: url('../images/awesome-logo.svg') center center no-repeat;
     background-size: contain;
     height: 0;
@@ -48,4 +48,4 @@
     margin: 0;
     padding-top: 50px;
     width: 210px;
-  }
+}
