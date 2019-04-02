@@ -1,47 +1,51 @@
 //Header Landing
-.header__logo-container {
+.landing__body .header__logo-container {
     background:#f5f5f5;
     display: flex;
     justify-content: center;
     padding-top: 95px;
-    margin-bottom: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 0;
     @media all and (min-width:768px) {
       padding-top: 350px;
-      margin-bottom: 31px;
+      padding-bottom: 31px;
     }
-  }
-  .header__logo {
+}
+  .landing__body .header__logo {
     background: url('../images/awesome-logo.svg') center center no-repeat;
     background-size: contain;
     height: 0;
     overflow: hidden;
-    padding-top: 95px;
+    margin: 0;
+    padding-top: 63px;
     width: 250px;
     @media all and (min-width:768px) {
       width: 420px;
+      padding-top: 105px;
     }
   }
-  /*//Header Cards 
-  .header__card { //página de cards y el wrapper
-    margin: 0 30px;
-    @media all and (min-width: 768px) {
-      margin: 0 40px;
-    }
-  }
-  .header__card .header__logo-container {
+  //Header Cards 
+  .card__body .header__card .header__logo-container {
     background: #ffffff;
-    height: 111px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 31px 79px 30px 40px;
+    margin-bottom: 0;
     @media all and (min-width: 768px) {
       justify-content: flex-start;
+      padding: 31px 527px 30px 40px;
+    }
+    @media all and (min-width: 1024px) {
+      padding: 31px 783px 30px 40px;
     }
   }
-  .header__card .header__logo {
-    width: 201px;
-    height: 50px;
-    margin-top: 0;
+  .card__body .header__logo {
+    background: url('../images/awesome-logo.svg') center center no-repeat;
+    background-size: contain;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 50px;
+    width: 210px;
   }
-  */
-  
