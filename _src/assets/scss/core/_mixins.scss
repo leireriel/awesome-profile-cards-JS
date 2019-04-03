@@ -3,26 +3,13 @@
     color: $grey-dark;
     font-size: 18px;
     text-transform: uppercase;
-    display: flex;
-    justify-content: flex-start;
-    width: 150px;
-    height: 30px;
+    flex-grow: 1;
+    margin: 0;
+    font-weight: $open-sans-semibold;
 }
 
 @mixin iconForm() {
     color: $orange;
     font-size: 18px;
-    text-align: center;
-    width: 30px;
-    height: 25px;
-    margin-right: 5px;
-}
-
-@mixin boxForm() {
-    display: flex;
-    justify-content: space-between;  
-}
-
-@mixin arrowForm() {
-    color:$grey-dark;
+    margin: 0 10px 0 0;
 }
