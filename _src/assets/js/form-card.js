@@ -5,7 +5,7 @@ const result =  document.querySelector('.result');
 
 const addText = function textCard() {
     if (input.value === '') {
-        result.innerHTML = 'No me borres :-)';
+        result.innerHTML = 'No me borres 🐲';
     } else {
         result.innerHTML = input.value;
     } 
@@ -17,7 +17,7 @@ const result1 =  document.querySelector('.result1');
 
 const addText1 = function textCard1() {
     if (input1.value === '') {
-        result1.innerHTML = 'No me borres :-)';
+        result1.innerHTML = 'No me borres 🌋';
     } else {
         result1.innerHTML = input1.value;
     } 
