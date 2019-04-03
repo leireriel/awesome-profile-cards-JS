@@ -1,29 +1,32 @@
 .settings__design {
     font-family: $fontOpenSans;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-top: 27px;
     display: flex;
 }
+
 .design__first-box{
-    @include boxForm();
     text-decoration: none;
 }
+
 .design__title{
-    @include titleForm();
+    display: flex;
 }
+
 .design__img{ 
     @include iconForm();
 }
+
 .design__arrow{
-    @include arrowForm();
+    color:$grey-dark;
+    font-size: 18px;
 }
+
 .design__title--name{
     margin-top: 0%;
     margin-bottom: 0%;
-    width: 150px;
-    height: 40px;
+    @include titleForm();
 }
+
 .design__title--colors{
     color: $grey-dark;
     text-transform: uppercase;
@@ -33,14 +36,19 @@
     margin: 0%;
     margin-left: 20px;
 }
+
 .design__container--palette{
     display: flex;
     justify-content:space-between;
     margin-top: 20px;
+    border-bottom: 1px solid $medium-grey;
+    padding-bottom: 30px;
 }
+
 .desidn__radio{
     margin-right: 10px;
 }
+
 .design__palette{
     display: flex;
     align-items: center;
@@ -48,22 +56,24 @@
     align-content: center;
     margin-bottom: 10px;    
 }
+
 .design__list{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
+
 .list__color{
     width: 30px;
     height: 0px;
     overflow:hidden;
     padding-top: 25px;
 }
+
 .design__line{
     height: 1px;
-    background-color: black;
+    background-color: $black;
     width: 100%;
     margin-top: 200px;
 }
-
