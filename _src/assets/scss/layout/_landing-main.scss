@@ -8,12 +8,9 @@
 .landing__wrapper {
   background: $grey-light;
   flex-grow: 1;
-
-  @media all and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing__main {
