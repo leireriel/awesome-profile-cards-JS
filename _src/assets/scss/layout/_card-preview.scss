@@ -89,7 +89,8 @@
     margin: 10px 0 12px 15px; 
 }
 
-.list__item {
+.card__list--link {
+    text-decoration: none;
     border: 2px solid $green;
     width: 32px;
     height: 0;
@@ -103,10 +104,6 @@
     overflow: hidden;
     border-radius: 50%;
     margin: 0 5px;
-}
-
-.card__list--link {
-    text-decoration: none;
 }
 
 .fa-mobile-alt {
