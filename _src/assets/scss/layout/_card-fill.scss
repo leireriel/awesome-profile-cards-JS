@@ -1,72 +1,88 @@
 .settings__fill {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    border-bottom:  1px solid $medium-grey;
-    padding-bottom: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $medium-grey;
+  padding-bottom: 10px;
+  width: 329px;
 }
 
 .fill__first-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0 25px;
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 25px;
+  text-decoration: none;
 }
 
 .fill__title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .fill__title--name {
-    margin: 0 0 0 10px;
-    @include titleForm();
+  margin: 0 0 0 10px;
+  @include titleForm();
 }
 
 .fill__img {
-    @include iconForm();
+  @include iconForm();
 }
 
 .arrow__fill {
-    color: $grey-dark;
-    font-size: 18px;
+  color: $grey-dark;
+  font-size: 18px;
 }
 
 .fill__form {
-    font-family: $fontOpenSans;
-    font-weight: $open-sans-reg;
-    font-size: 14px;
-    input {
-        display: block;
-        margin-bottom: 20px;
-        width: 100%;
-        border: 1px solid $green;
-        height: 30px;
-        margin-top: 6px;
-        padding-left: 9px;
+  font-family: $fontOpenSans;
+  font-weight: $open-sans-reg;
+  font-size: 14px;
+  input {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid $green;
+    height: 30px;
+    margin-top: 6px;
+    padding-left: 9px;
+    
+    @media all and (min-width: 768px) {
+      width: 318px;
     }
-    label {
-        color: $dark-green;
-    }
+  }
+  label {
+    color: $dark-green;
+  }
 }
 
 .fill__fieldset {
-    border: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.select-image {
-    display: flex;
-    flex-direction: row;
-    input {
-        width: 140px;
-        height: 30px;
-    }
+.fill__select-image--container {
+  display: flex;
 }
+
+#selectImage{
+  height: 30px;
+  width: 140px;
+}
+
+// .select-image {
+//   input {
+//     width: 131px;
+//     height: 30px;
+//   }
+// }
 
 .preview__image {
-    width: 30px;
-    height: 30px;
-    border: 1px solid $green;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $green;
+  margin-top: 6px;
+  margin-left: 20px;
 }
