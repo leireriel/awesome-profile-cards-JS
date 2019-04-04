@@ -1,8 +1,10 @@
 body {
   margin: 0;
 }
+
 .wrapper {
   margin: 0 26px;
+  
   @media all and (min-width: 768px) {
     margin: 0 175px;
   }
