@@ -70,6 +70,23 @@
 #selectImage{
   height: 30px;
   width: 140px;
+  display: none;
+}
+
+.fill__select--button {
+  width: 140px;
+  height: 30px;
+  background-color: $orange;
+  color: $white;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  margin-top: 6px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  border: none;
+  font-family: $fontOpenSans;
+  font-weight: $open-sans-reg;
+  font-size: 14px;
+  line-height: 20px; 
 }
 
 // .select-image {
