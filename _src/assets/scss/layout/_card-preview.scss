@@ -104,21 +104,72 @@
     overflow: hidden;
     border-radius: 50%;
     margin: 0 5px;
-}
-
-.fa-mobile-alt {
     font-size: 18px;
 }
 
-.fa-envelope {
-    font-size: 18px;
+// .fa-mobile-alt {
+//     font-size: 18px;
+// }
+
+// .fa-envelope {
+//     font-size: 18px;
+// }
+
+// .fa-linkedin-in {
+//     font-size: 18px;
+
+// }
+
+// .fa-github-alt {
+//     font-size: 18px;
+// }
+
+
+
+.option1 {
+  .card__box--text {
+    border-left: 5px solid $green;
+  }
+  .card__name {
+    color: $dark-green;
+  }
+  .card__job-title {
+    color: $blue;
+  }
+  .card__list--link {
+    color: $dark-green;
+    border: 2px solid $green;
+  }
 }
 
-.fa-linkedin-in {
-    font-size: 18px;
-
+.option2 {
+  .card__box--text {
+    border-left: 5px solid #e95626;
+  }
+  .card__name {
+    color: #420101;
+  }
+  .card__job-title {
+    color: #bd1010;
+  }
+  .card__list--link {
+    color: #420101;
+    border: 2px solid #e95626;
+  }
 }
 
-.fa-github-alt {
-    font-size: 18px;
+.option3 {
+  .card__box--text {
+    border-left: 5px solid #a0c0cf;
+  }
+  .card__name {
+    color: #3e5b65;
+  }
+  .card__job-title {
+    color: #dfe5eb;
+  }
+  .card__list--link {
+    color: #3e5b65;
+    border: 2px solid #a0c0cf;
+  }
 }

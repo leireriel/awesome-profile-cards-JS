@@ -4,7 +4,10 @@
   flex-direction: column;
   border-bottom: 1px solid $medium-grey;
   padding-bottom: 10px;
-  width: 329px;
+
+  @media all and (min-width: 768px) {
+    width: 329px;
+  }
 }
 
 .fill__first-box {
@@ -47,9 +50,10 @@
     height: 30px;
     margin-top: 6px;
     padding-left: 9px;
+    box-sizing: border-box;
     
     @media all and (min-width: 768px) {
-      width: 318px;
+      width: 329px;
     }
   }
   label {
@@ -88,13 +92,6 @@
   font-size: 14px;
   line-height: 20px; 
 }
-
-// .select-image {
-//   input {
-//     width: 131px;
-//     height: 30px;
-//   }
-// }
 
 .preview__image {
   width: 30px;
