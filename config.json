@@ -19,7 +19,9 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/form-card.js",
-      "_src/assets/js/icons.js"
+      "_src/assets/js/icons.js",
+      "_src/assets/js/color-palette.js",
+      "_src/assets/js/social-media.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
