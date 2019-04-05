@@ -1,7 +1,5 @@
 'use strict'
 
-// console.log('color');
-
 const preview = document.querySelector('.section__card');
 const radio1 = document.getElementById('settings__palette1');
 const radio2 = document.getElementById('settings__palette2');
