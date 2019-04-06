@@ -1,18 +1,16 @@
 .footer-container {
     border-top: 1px solid $medium-grey;
-    padding: 19px 0 20px 0;
-    @media all and (min-width: 768px) {
-      padding: 10px 0;
-    }
 }
 
 .footer-container__wraper {
+    height: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
     @media all and (min-width: 768px) {
+        height: 60px;
         margin: 0 40px;
         flex-direction: row;
         justify-content: space-between;
@@ -23,10 +21,13 @@
     font-family: $fontOpenSans;
     font-weight: $open-sans-reg;
     line-height: 20px;
-    margin: 9px 0 11px 0;
+    margin: 0 0 11px 0;
     color: $grey-footer;
     opacity: 0.5;
     font-size: 14px;
+    @media all and (min-width: 768px) {
+        margin: 9px 0 11px 0;
+    }
 }
 
 .footer__img {
