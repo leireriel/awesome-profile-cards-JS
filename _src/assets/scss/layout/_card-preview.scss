@@ -36,7 +36,7 @@
 
 .card__box {
     width: 240px;
-    height: 331px;
+    min-height: 331px;
     background-color: $white;
     border-radius: 2px; 
     margin-top: 50px;
