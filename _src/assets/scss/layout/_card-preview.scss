@@ -8,7 +8,7 @@
 
     @media all and (min-width: 768px) {
         border-radius: 6px;
-        height: 100%;
+        height: 100vh;
     }
 }
 
@@ -36,7 +36,7 @@
 
 .card__box {
     width: 240px;
-    height: 331px;
+    min-height: 331px;
     background-color: $white;
     border-radius: 2px; 
     margin-top: 50px;
@@ -61,6 +61,8 @@
     color: $dark-green;
     margin: 0;
     padding-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card__job-title {
@@ -70,6 +72,8 @@
     line-height: 20px;
     color: $grey-dark;
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card__photo {
@@ -114,24 +118,6 @@
     font-size: 18px;
 }
 
-// .fa-mobile-alt {
-//     font-size: 18px;
-// }
-
-// .fa-envelope {
-//     font-size: 18px;
-// }
-
-// .fa-linkedin-in {
-//     font-size: 18px;
-
-// }
-
-// .fa-github-alt {
-//     font-size: 18px;
-// }
-
-
 
 .option1 {
   .card__box--text {
@@ -140,9 +126,9 @@
   .card__name {
     color: $dark-green;
   }
-  .card__job-title {
-    color: $blue;
-  }
+  // .card__job-title {
+  //   color: $blue;
+  // }
   .card__list--link {
     color: $dark-green;
     border: 2px solid $green;
@@ -156,9 +142,9 @@
   .card__name {
     color: #420101;
   }
-  .card__job-title {
-    color: #bd1010;
-  }
+  // .card__job-title {
+  //   color: #bd1010;
+  // }
   .card__list--link {
     color: #420101;
     border: 2px solid #e95626;
@@ -172,9 +158,9 @@
   .card__name {
     color: #3e5b65;
   }
-  .card__job-title {
-    color: #dfe5eb;
-  }
+  // .card__job-title {
+  //   color: #dfe5eb;
+  // }
   .card__list--link {
     color: #3e5b65;
     border: 2px solid #a0c0cf;

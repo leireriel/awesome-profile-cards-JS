@@ -26,22 +26,22 @@
                     <div class="wrapper-card">
                         <fieldset class="fieldset__settings">
                             <article class="settings__design"></article>
-<a href class="design__first-box">
+<a id="design" href="#" class="design__first-box collapsible__title">
   <div class="design__title">
     <i class="design__img far fa-object-ungroup"></i>
     <h2 class="design__title--name">diseña</h2>
-    <i class="fas fa-chevron-up design__arrow"></i>
+    <i id="design-arrow" class="fas fa-chevron-up design__arrow"></i>
   </div>
 </a>
 
-                            <div class="design__container--palette">
+                            <div id="design-container" class="design__container--palette collapsible__container">
                                 <div>
                                      <h3 class="design__title--colors">colores</h3>
 
                                 </div>
                                 <div> <a href class="design__palette-colors">
     <label class="design__palette palette1" for="settings__palette1">
-      <input class="desidn__radio" type="radio" id="settings__palette1" name="color">
+      <input class="desidn__radio" type="radio" id="settings__palette1" name="color" checked>
       <ul class="design__list tipe1">
         <li class="list__color tipe1_color1" style="background-color: #114e4e">114e4e</li>
         <li class="list__color tipe1_color2" style="background-color:#438792">438792</li>
@@ -76,22 +76,22 @@
                                 </article>
                         </fieldset>
                         <fieldset class="fieldset__settings">
-                            <article class="settings__fill"> <a href class="fill__first-box">
+                            <article class="settings__fill"> <a id="fill" href="#" class="fill__first-box collapsible__title">
         <div class="fill__title">
             <i class="fill__img far fa-keyboard"></i>
             <h2 class="fill__title--name">Rellena</h2>
         </div>
-        <i class="arrow__fill fas fa-chevron-up"></i>
+        <i id="fill-arrow" class="arrow__fill fas fa-chevron-up"></i>
     </a>
 
-                                <div class="fill__form">
+                                <div id="fill-container" class="fill__form collapsible__container">
                                     <fieldset class="fill__fieldset personal-data">
                                         <label for="fullName">Nombre completo</label>
                                         <input class="input" placeholder="Ej: Sally Jill"
-                                        id="fullName" type="text" name="fullName">
+                                        id="fullName" type="text" name="fullName" required>
                                         <label for="jobTitle">Puesto</label>
                                         <input class="input1" placeholder="Ej: Front-end unicorn"
-                                        id="jobTitle" type="text" name="jobTitle">
+                                        id="jobTitle" type="text" name="jobTitle" required>
                                     </fieldset>
                                     <fieldset class="fill__fieldset select-image">
                                         <label for="selectImage">Imagen de perfil</label>
@@ -120,13 +120,13 @@
                             </article>
                         </fieldset>
                         <fieldset class="fieldset__settings">
-                            <article class="share__design"> <a href="" class="share__title">
+                            <article class="share__design"> <a id="share" href="#" class="share__title collapsible__title">
     <i class="share__title--img fas fa-share-alt"></i>
     <h2 class="share__title--name">Comparte</h2>
-    <i class="share__title--chevron fas fa-chevron-up"></i>
+    <i id="share-arrow" class="share__title--chevron fas fa-chevron-up"></i>
   </a>
 
-                                <div class="share__colapsable--container">
+                                <div id="share-container" class="share__colapsable--container collapsible__container">
                                     <div class="share__options">
                                         <button type="submit" class="share__button "><i class="share__button--img far fa-address-card"></i>Crear tarjeta</button>
                                     </div>
@@ -159,16 +159,16 @@
                             </div>
                             <div class="card__photo"></div>
                             <ul class="card__list">
-                                <li class="list__item"><a href="#" class="card__list--link fas fa-mobile-alt">mobile</a>
+                                <li class="list__item"><a href="" class="card__list--link fas fa-mobile-alt phone__icon">mobile</a>
 
                                 </li>
-                                <li class="list__item"><a href="#" class="card__list--link far fa-envelope">email</a>
+                                <li class="list__item"><a href="" class="card__list--link far fa-envelope email__icon">email</a>
 
                                 </li>
-                                <li class="list__item"><a href="#" class="card__list--link fab fa-linkedin-in">linkedin</a>
+                                <li class="list__item"><a href="" class="card__list--link fab fa-linkedin-in linkedin__icon">linkedin</a>
 
                                 </li>
-                                <li class="list__item"><a href="#" class="card__list--link fab fa-github-alt">github</a>
+                                <li class="list__item"><a href="" class="card__list--link fab fa-github-alt github__icon">github</a>
 
                                 </li>
                             </ul>

@@ -1,18 +1,18 @@
 <article class="settings__fill">
-    <a href class="fill__first-box">
+    <a id="fill" href="#" class="fill__first-box collapsible__title">
         <div class="fill__title">
             <i class="fill__img far fa-keyboard"></i>
             <h2 class="fill__title--name">Rellena</h2>
         </div>
-        <i class="arrow__fill fas fa-chevron-up"></i>
+        <i id="fill-arrow" class="arrow__fill fas fa-chevron-up"></i>
     </a>
-    <div class="fill__form">
+    <div id="fill-container" class="fill__form collapsible__container">
         <fieldset class="fill__fieldset personal-data">
             <label for="fullName">Nombre completo</label>
-            <input class="input" placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName">
+            <input class="input" placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName" required>
 
             <label for="jobTitle">Puesto</label>
-            <input class="input1" placeholder="Ej: Front-end unicorn" id="jobTitle" type="text" name="jobTitle">
+            <input class="input1" placeholder="Ej: Front-end unicorn" id="jobTitle" type="text" name="jobTitle" required>
         </fieldset>
         <fieldset class="fill__fieldset select-image">
             <label for="selectImage">Imagen de perfil</label>
