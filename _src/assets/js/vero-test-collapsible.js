@@ -3,26 +3,27 @@
 
 const titleArray = document.querySelectorAll('.collapsible__title');
 const sectionArray = document.querySelectorAll('.collapsible__container');
-
-const toggleArrow = (element) => {
-  element.classList.toggle('fa-chevron-down');
-  element.classList.toggle('fa-chevron-up');
-}
+const arrowArray = document.querySelectorAll('.arrow');
 
 const activateCollapse = (event) => {
   const currentTitle = event.currentTarget;
-  const arrow = currentTitle.querySelector('.arrow');
+  const arrowElement = currentTitle.querySelector('.arrow');
   const sectionSibling = currentTitle.nextElementSibling;
 
   if (!sectionSibling.classList.contains('hidden')) {
     sectionSibling.classList.toggle('hidden');
-    toggleArrow(arrow);
+    arrowElement.classList.add('fa-chevron-down');
+    arrowElement.classList.remove('fa-chevron-up');
   } else {
   for (const section of sectionArray) {
     section.classList.add('hidden');
   } 
+  for (const arrow of arrowArray) {
+    arrow.classList.add('fa-chevron-down');
+    arrow.classList.remove('fa-chevron-up');
+  }
   sectionSibling.classList.remove('hidden');
-  toggleArrow(arrow);
+  arrowElement.classList.toggle('fa-chevron-up');
   }
 }
 
