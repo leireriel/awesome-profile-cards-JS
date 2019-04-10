@@ -1,16 +1,17 @@
 'use strict';
+// modificar nombre variable acc
+let collapsibleTitle = document.querySelectorAll('.collapsible__title');
 
-let acc = document.querySelectorAll('.collapsible__title');
-
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", collapse); 
+for (let i = 0; i < collapsibleTitle.length; i++) {
+  collapsibleTitle[i].addEventListener('click', collapse); 
 }
 
 function collapse() {
-  let acc = document.querySelectorAll('.collapsible__title');
+  //sobra??
+  //let collapsibleTitle = document.querySelectorAll('.collapsible__title');
   
-    for (let i = 0; i < acc.length; i++) {
-      let currentElement = acc[i];
+    for (let i = 0; i < collapsibleTitle.length; i++) {
+      /*let currentElement = */collapsibleTitle[i];
       let collapsibleContainer = 
       document.querySelector('#'+currentElement.id+'-container');
       let arrow = 
@@ -24,3 +25,4 @@ function collapse() {
       }
     };
   } 
+// sustituir this por currentTarget
