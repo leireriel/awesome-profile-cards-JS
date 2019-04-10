@@ -28,8 +28,14 @@ body {
     grid-gap: 30px;
   }
 }
-.collapsible__container {
+/*.collapsible__container //{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}*/
+.hidden {
+  .fill__form, .share__collapsible--container, .design__container--palette {
+    display: none;
+    transition: 0.2s ease-out;
+  }
 }

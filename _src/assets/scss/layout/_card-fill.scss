@@ -42,6 +42,7 @@
   font-family: $fontOpenSans;
   font-weight: $open-sans-reg;
   font-size: 14px;
+  //display: none;
   input {
     display: block;
     margin-bottom: 20px;
@@ -100,8 +101,5 @@
   margin-top: 6px;
   margin-left: 20px;
 }
-.collapsible__container {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
+
+
