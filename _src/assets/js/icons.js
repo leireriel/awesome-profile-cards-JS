@@ -35,7 +35,7 @@ function printPhone () {
     convertToIcon(`tel:${phone.value}`, phoneIcon);
 }
 function printLinkedin () {
-    convertToIcon(`https://www.${linkedin.value}`, linkedinIcon);
+    convertToIcon(`https://www.linkedin.com/in/${linkedin.value}`, linkedinIcon);
 }
 function printGithub () {
     convertToIcon(`https://github.com/${github.value}`, githubIcon);
