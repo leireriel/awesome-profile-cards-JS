@@ -1,28 +1,31 @@
 'use strict';
 
-let collapsibleTitle = document.querySelectorAll('.collapsible__title');
+const collapsibleTitle = document.querySelectorAll('.collapsible__title');
 const collapsibleContainer = document.querySelectorAll('.parent__container');
 
-for (let i = 0; i < collapsibleTitle.length; i++) {
-  collapsibleTitle[i].addEventListener('click', collapse); 
+function collapseAll() {
+  for (const collapse of collapsibleContainer) {
+    collapse.classList.add('hidden');
+  }
 }
 
 function collapse(e) {
-  let trigger = e.currentTarget.parentElement;
-  
- 
-  if (trigger.classList.contains('hidden')) {
-    collapseAll();
-    trigger.classList.remove('hidden');
+  const trigger = e.currentTarget;
+  const resultTrigger = trigger.parentElement.classList.contains('hidden');
+
+  if (resultTrigger === true) {
+      collapseAll();
+      trigger.parentElement.classList.remove('hidden');
   } else {
-    collapseAll();
+      trigger.parentElement.classList.add('hidden');
   }
+}
+for (const container of collapsibleTitle){
+  container.addEventListener('click', collapse);
 }
 
-function collapseAll() {
-  for (let i = 0; i < collapsibleContainer.length; i++) {
-    collapsibleContainer[i].classList.add('hiddenAll');
-  }
-}
+
+
+
 
 
