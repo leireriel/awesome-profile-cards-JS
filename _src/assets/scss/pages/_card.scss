@@ -30,6 +30,7 @@ body {
 }
 
 .hidden {
+  background-color: red;
   .collapsible__container {
     display: none;
   }
@@ -42,4 +43,9 @@ body {
     }
   }
 }
+
+.hiddenAll {
+  display: none;
+}
+
 
