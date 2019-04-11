@@ -28,14 +28,18 @@ body {
     grid-gap: 30px;
   }
 }
-/*.collapsible__container //{
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}*/
+
 .hidden {
-  .fill__form, .share__collapsible--container, .design__container--palette {
+  .collapsible__container {
     display: none;
-    transition: 0.2s ease-out;
+  }
+  .collapsible__title {
+    .arrow {
+      transform: rotate(180deg);
+      transition: transform ease-in-out 0.7s;
+      //Hacer que giren también al desplegarse?
+      //Preguntar si podemos añadir aquí una transición
+    }
   }
 }
+
