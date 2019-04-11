@@ -1,9 +1,7 @@
 'use strict';
-// modificar nombre variable acc
 
 const fill = document.querySelector('.fill__form');
 const share = document.querySelector('.share__collapsible--container');
-
 let collapsibleTitle = document.querySelectorAll('.collapsible__title');
 
 for (let i = 0; i < collapsibleTitle.length; i++) {
