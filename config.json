@@ -22,7 +22,8 @@
       "_src/assets/js/icons.js",
       "_src/assets/js/color-palette.js",
       "_src/assets/js/social-media.js",
-      "_src/assets/js/collapsible-form-card.js"
+      "_src/assets/js/collapsible-form-card.js",
+      "_src/assets/js/preview-image.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
