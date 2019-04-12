@@ -17,7 +17,7 @@
   @include titleForm;
 }
 
-.share__title--chevron {
+.arrow {
   font-size: 18px;
   color: $grey-dark;
 }
@@ -50,4 +50,7 @@
   text-align: center;
   display: block;
   margin-bottom: 10px;
+}
+.share__collapsible--container {
+ // display: none;
 }
