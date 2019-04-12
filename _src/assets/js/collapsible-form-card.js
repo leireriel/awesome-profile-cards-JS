@@ -1,30 +1,25 @@
 'use strict';
 
-const collapsibleTitle = document.querySelectorAll('.collapsible__title');
-const collapsibleContainer = document.querySelectorAll('.parent__container');
+const titleContainer = document.querySelectorAll('.collapsible__title');
+const sections = document.querySelectorAll('.section__fieldset');
 
-function collapseAll() {
-  for (const collapse of collapsibleContainer) {
-    collapse.classList.add('hidden');
-  }
+
+function collapsePlease(event) {
+    const culpable = event.currentTarget;
+   
+    if (culpable.parentElement.classList.contains('hidden__collapsible')) {
+        for (const section of sections) {
+          section.classList.add('hidden__collapsible');
+        }
+        culpable.parentElement.classList.remove('hidden__collapsible');
+    } else {
+        culpable.parentElement.classList.add('hidden__collapsible');
+    }
 }
 
-function collapse(e) {
-  const trigger = e.currentTarget;
-  const resultTrigger = trigger.parentElement.classList.contains('hidden');
-
-  if (resultTrigger === true) {
-      collapseAll();
-      trigger.parentElement.classList.remove('hidden');
-  } else {
-      trigger.parentElement.classList.add('hidden');
-  }
+for (const container of titleContainer){
+    container.addEventListener('click', collapsePlease);
 }
-for (const container of collapsibleTitle){
-  container.addEventListener('click', collapse);
-}
-
-
 
 
 
