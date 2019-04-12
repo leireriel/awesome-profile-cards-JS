@@ -29,6 +29,10 @@ body {
   }
 }
 
+.collapsible__title {
+  cursor: pointer;
+}
+
 .hidden__collapsible {
   .collapsible__container {
     display: none;
