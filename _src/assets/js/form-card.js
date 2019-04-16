@@ -9,7 +9,7 @@ const addText = function textCard() {
     } else {
         result.innerHTML = input.value;
     } 
-} 
+};
 input.addEventListener('keyup', addText);
 
 const input1 = document.querySelector('.input1');
