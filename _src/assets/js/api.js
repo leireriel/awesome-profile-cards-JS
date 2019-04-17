@@ -10,7 +10,7 @@ let phone1 = document.querySelector('#phone');
 let linkedin1 = document.querySelector('#linkedin');
 let github1 = document.querySelector('#github');
 
-const obj = {
+const userInfo = {
   palette: 1,
   name: fullName.value,
   job: jobTitle.value,
@@ -22,11 +22,12 @@ const obj = {
 }
 console.log(obj);
 
+localStorage.setItem('userInfo', 'userInfo');
 
-function sendRequest(objJson){
+function sendRequest(){
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
-    body: JSON.stringify(objJson),
+    body: JSON.stringify(userInfo),
     headers: {
       'content-type': 'application/json'
     },
@@ -36,7 +37,7 @@ function sendRequest(objJson){
       console.log(data.cardURL);
     });
 }
-submitButton.addEventListener('click', sendRequest(obj));
+submitButton.addEventListener('click', sendRequest);
 
 
 
