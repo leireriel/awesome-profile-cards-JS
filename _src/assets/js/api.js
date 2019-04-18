@@ -41,10 +41,15 @@ const saveLocalStorage = (e) => {
 };
 
 const saveInLS = JSON.parse(localStorage.getItem('userInfoLS'));
+console.log(saveInLS);
 
 for (let input of fieldInputs) {
   input.addEventListener('keyup', saveLocalStorage);
-  input = saveInLS.;
+  if (input.type !== 'file') {
+    if (saveInLS !== null) {
+      input.value = saveInLS[input.name];
+    }
+  }
 }
 
 
