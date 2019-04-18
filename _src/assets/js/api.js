@@ -22,7 +22,7 @@ function getUserInfostr()
     email: email1.value,
     linkedin: linkedin1.value,
     github: github1.value,
-    photo: 'https://cdn.memegenerator.es/imagenes/memes/full/6/47/6470819.jpg'
+    //photo: 'https://cdn.memegenerator.es/imagenes/memes/full/6/47/6470819.jpg'
   }
   console.log(userInfo);
   const userInfostr = JSON.stringify(userInfo);
