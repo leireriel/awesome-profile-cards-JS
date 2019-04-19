@@ -5,16 +5,22 @@ const responseURL = document.querySelector('.response');
 const field = document.querySelector('#field');
 const fullName = document.querySelector('#fullName');
 const jobTitle = document.querySelector('#jobTitle');
-//const paletteInput = document.querySelector('.desidn__radio');
 let email1 = document.querySelector('#email');
 let phone1 = document.querySelector('#phone');
 let linkedin1 = document.querySelector('#linkedin');
 let github1 = document.querySelector('#github');
-
+const fileInput = document.querySelector('#selectImage');
+let imageToSave = "";
 
 function getUserInfostr()
 {
+  //photo base 64
+  // var file = fileInput.files[0];
+  // var reader  = new FileReader();
+  // const fileBase64 = reader.readAsDataURL(file);
+
   const userInfo = {
+    //:cheked es el atributo de radio
     palette: document.querySelector('.desidn__radio:checked').value,
     name: fullName.value,
     job: jobTitle.value,
@@ -22,7 +28,7 @@ function getUserInfostr()
     email: email1.value,
     linkedin: linkedin1.value,
     github: github1.value,
-    //photo: 'https://cdn.memegenerator.es/imagenes/memes/full/6/47/6470819.jpg'
+    photo: imageToSave
   }
   console.log(userInfo);
   const userInfostr = JSON.stringify(userInfo);
@@ -32,8 +38,7 @@ function getUserInfostr()
 
 function loadUserInfo(){
   const userInfostr = localStorage.getItem('userInfo');
-  if(userInfostr != null)
-  {
+  if(userInfostr != null){
    const userInfo = JSON.parse(userInfostr);
 
    fullName.value = userInfo.name;
@@ -54,7 +59,7 @@ function loadUserInfo(){
         r.checked = false;
       }
    }
-   //paletteInput.value = userInfo.palette;
+   //aquí tenemos que juntar el ticket del preiew que teniamos hecho con la base 64.
   }
 }
 
@@ -69,12 +74,14 @@ function sendRequest(event){
   })
     .then(response => response.json())
     .then(data => {
-      console.log(data.cardURL);
+      console.log(data);
     });
 }
+
 submitButton.addEventListener('click', sendRequest);
 
 loadUserInfo();
+
 
 
 
