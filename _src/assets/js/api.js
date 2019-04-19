@@ -48,7 +48,7 @@ function sendRequest(){
     .then(data => {
       console.log(data);
       console.log(data.cardURL);
-      shareLink.innerHTML = `<a href="${data.cardURL}">${data.cardURL}</a>`;
+      shareLink.innerHTML = `<a href="${data.cardURL}" target="_blank">${data.cardURL}</a>`;
     });
     
 }
