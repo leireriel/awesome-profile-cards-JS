@@ -11,14 +11,9 @@ let linkedin1 = document.querySelector('#linkedin');
 let github1 = document.querySelector('#github');
 const fileInput = document.querySelector('#selectImage');
 let imageToSave = "";
+const devImage = document.querySelector('.share__created--link');
 
-function getUserInfostr()
-{
-  //photo base 64
-  // var file = fileInput.files[0];
-  // var reader  = new FileReader();
-  // const fileBase64 = reader.readAsDataURL(file);
-
+function getUserInfostr() {
   const userInfo = {
     //:cheked es el atributo de radio
     palette: document.querySelector('.desidn__radio:checked').value,
@@ -59,7 +54,6 @@ function loadUserInfo(){
         r.checked = false;
       }
    }
-   //aquí tenemos que juntar el ticket del preiew que teniamos hecho con la base 64.
   }
 }
 
@@ -74,7 +68,7 @@ function sendRequest(event){
   })
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      devImage.innerHTML = "https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/-LcwUEm6lYlPuJWccvww";
     });
 }
 
