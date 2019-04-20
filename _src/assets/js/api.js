@@ -68,7 +68,10 @@ function sendRequest(event){
   })
     .then(response => response.json())
     .then(data => {
-      devImage.innerHTML = "https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/-LcwUEm6lYlPuJWccvww";
+      devImage.innerHTML = data.cardURL;
+      if (data.succes === false){
+        console.log(data.error);
+      }
     });
 }
 
