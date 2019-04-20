@@ -22,10 +22,22 @@ const userInfo = {
   photo: ''
 };
 
+let culpableRadio;
+
+function designRadio (event){
+  culpableRadio = event.currentTarget;
+  console.log('^*^*', culpableRadio);
+}
+
+radio1.addEventListener('click', designRadio);
+  
+radio2.addEventListener('click', designRadio);
+  
+radio3.addEventListener('click', designRadio);
 
 function sendRequest(){
   const userInfoValue = {
-    palette: 1,
+    palette: culpableRadio.value,
     name: fullName.value,
     job: jobTitle.value,
     phone: phone1.value,
