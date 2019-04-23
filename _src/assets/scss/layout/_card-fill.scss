@@ -33,7 +33,7 @@
   @include iconForm();
 }
 
-.arrow__fill {
+.arrow {
   color: $grey-dark;
   font-size: 18px;
 }
@@ -42,6 +42,7 @@
   font-family: $fontOpenSans;
   font-weight: $open-sans-reg;
   font-size: 14px;
+  //display: none;
   input {
     display: block;
     margin-bottom: 20px;
@@ -90,7 +91,8 @@
   font-family: $fontOpenSans;
   font-weight: $open-sans-reg;
   font-size: 14px;
-  line-height: 20px; 
+  line-height: 20px;
+  cursor: pointer;
 }
 
 .preview__image {
@@ -100,8 +102,11 @@
   margin-top: 6px;
   margin-left: 20px;
 }
-.collapsible__container {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+
+.js__profile-preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
 }
+

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const preview = document.querySelector('.section__card');
 const radio1 = document.getElementById('settings__palette1');
