@@ -77,8 +77,6 @@ function sendRequest(event){
     });
 }
 
-// class="share__created--twitter"><i class="share__created--twitter-img fab fa-twitter"></i>Compartir en twitter</a>
-
 submitButton.addEventListener('click', sendRequest);
 
 loadUserInfo();
