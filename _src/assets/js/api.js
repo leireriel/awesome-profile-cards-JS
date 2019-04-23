@@ -12,6 +12,7 @@ let github1 = document.querySelector('#github');
 const fileInput = document.querySelector('#selectImage');
 let imageToSave = "";
 const devImage = document.querySelector('.share__created--link');
+const shareTwitter = document.querySelector ('.twitter');
 
 function getUserInfostr() {
   const userInfo = {
@@ -72,8 +73,11 @@ function sendRequest(event){
       if (data.succes === false){
         console.log(data.error);
       }
+      shareTwitter.innerHTML = `<a href="http://twitter.com/home?status=Echa%20un%20vistazo%20a%20mi%20tarjeta%20profesional%20👀💼%20${data.cardURL}" target="_blank" rel="noopener" class="share__created--twitter"><i class="share__created--twitter-img fab fa-twitter"></i> Compartir en twitter</a>`;
     });
 }
+
+// class="share__created--twitter"><i class="share__created--twitter-img fab fa-twitter"></i>Compartir en twitter</a>
 
 submitButton.addEventListener('click', sendRequest);
 
