@@ -1,7 +1,7 @@
 'use strict';
 
-const submitButton = document.querySelector('.share__button');
-const responseURL = document.querySelector('.response');
+const submitButton = document.querySelector('.share__button'); //listener
+const responseURL = document.querySelector('.response'); 
 const field = document.querySelector('#field');
 const fullName = document.querySelector('#fullName');
 const jobTitle = document.querySelector('#jobTitle');
