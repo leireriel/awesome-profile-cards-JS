@@ -73,10 +73,11 @@ function sendRequest(event){
       if (data.succes === false){
         console.log(data.error);
       }
-      shareTwitter.innerHTML = `<a href="http://twitter.com/home?status=This%20here!%20${data.cardURL}" target="_blank" rel="noopener">share it with your followers on Twitter!</a>`;
+      shareTwitter.innerHTML = `<a href="http://twitter.com/home?status=Echa%20un%20vistazo%20a%20mi%20tarjeta%20profesional%20👀💼%20${data.cardURL}" target="_blank" rel="noopener" class="share__created--twitter"><i class="share__created--twitter-img fab fa-twitter"></i> Compartir en twitter</a>`;
     });
 }
 
+// class="share__created--twitter"><i class="share__created--twitter-img fab fa-twitter"></i>Compartir en twitter</a>
 
 submitButton.addEventListener('click', sendRequest);
 
