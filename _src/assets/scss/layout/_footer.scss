@@ -12,8 +12,9 @@
     @media all and (min-width: 768px) {
         height: 60px;
         margin: 0 40px;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        justify-items: center;
     }
 }
 
@@ -21,7 +22,7 @@
     font-family: $fontOpenSans;
     font-weight: $open-sans-reg;
     line-height: 20px;
-    margin: 0 0 11px 0;
+    margin: 0 0 0 0;
     color: $grey-footer;
     opacity: 0.5;
     font-size: 14px;
@@ -35,6 +36,11 @@
     display: block;
 
     @media all and (min-width: 768px) {
-        margin: 0;
+        margin: 0 0 0 80px;
     }
+}
+
+.footer__fire {
+    height: 40px;
+    display: block;
 }
