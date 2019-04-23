@@ -12,6 +12,7 @@ let github1 = document.querySelector('#github');
 const fileInput = document.querySelector('#selectImage');
 let imageToSave = "";
 const devImage = document.querySelector('.share__created--link');
+const shareTwitter = document.querySelector ('.twitter');
 
 function getUserInfostr() {
   const userInfo = {
@@ -72,8 +73,10 @@ function sendRequest(event){
       if (data.succes === false){
         console.log(data.error);
       }
+      shareTwitter.innerHTML = `<a href="http://twitter.com/home?status=This%20here!%20${data.cardURL}" target="_blank" rel="noopener">share it with your followers on Twitter!</a>`;
     });
 }
+
 
 submitButton.addEventListener('click', sendRequest);
 
