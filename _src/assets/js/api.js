@@ -47,7 +47,13 @@ function loadUserInfo(){
    github1.value = userInfo.github;
    profilePreview.style.backgroundImage = `url(${userInfo.photo})`;
 
-  //  profileImage.style.backgroundImage = `url(${userInfo.photo})`;
+   resultName.innerHTML = userInfo.name;
+   resultJob.innerHTML = userInfo.job;
+   itemEmail.innerHTML= `<a href="mailto:${userInfo.email}" class="card__list--link far fa-envelope email__icon" target="_blank">email</a>`;
+   itemPhone.innerHTML= `<a href="tel:${userInfo.phone}" class="card__list--link fas fa-mobile-alt phone__icon" target="_blank">mobile</a>`;
+   itemLinkedin.innerHTML= `<a href="https://www.linkedin.com/in/${userInfo.linkedin}" class="card__list--link fab fa-linkedin-in linkedin__icon" target="_blank">linkedin</a>`;
+   itemGithub.innerHTML= `<a href="https://github.com/${userInfo.github}" class="card__list--link fab fa-github-alt github__icon" target="_blank">github</a>`;
+   profileImage.style.backgroundImage = `url(${userInfo.photo})`;
 
    const radios = document.querySelectorAll('.desidn__radio');
    for(const r of radios)
