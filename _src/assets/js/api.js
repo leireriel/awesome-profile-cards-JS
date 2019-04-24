@@ -45,6 +45,10 @@ function loadUserInfo(){
    email1.value = userInfo.email;
    linkedin1.value = userInfo.linkedin;
    github1.value = userInfo.github;
+   profilePreview.style.backgroundImage = `url(${userInfo.photo})`;
+
+  //  profileImage.style.backgroundImage = `url(${userInfo.photo})`;
+
    const radios = document.querySelectorAll('.desidn__radio');
    for(const r of radios)
    {
