@@ -31,7 +31,7 @@ function printEmail (event) {
   if (value=== '') {
     itemEmail.innerHTML='';
   } else {
-    itemEmail.innerHTML= `<a href="mailto:${value}" class="card__list--link far fa-envelope email__icon">email</a>`;
+    itemEmail.innerHTML= `<a href="mailto:${value}" class="card__list--link far fa-envelope email__icon" target="_blank">email</a>`;
   }
 }
 
@@ -42,7 +42,7 @@ function printPhone (event) {
   if (value==='') {
     itemPhone.innerHTML='';
   } else {
-    itemPhone.innerHTML= `<a href="tel:${value}" class="card__list--link fas fa-mobile-alt phone__icon">mobile</a>`;
+    itemPhone.innerHTML= `<a href="tel:${value}" class="card__list--link fas fa-mobile-alt phone__icon" target="_blank">mobile</a>`;
   }
 }
 
@@ -53,7 +53,7 @@ function printLinkedin (event) {
   if (value==='') {
     itemLinkedin.innerHTML='';
   } else {
-    itemLinkedin.innerHTML= `<a href="https://www.linkedin.com/in/${value}" class="card__list--link fab fa-linkedin-in linkedin__icon">linkedin</a>`;
+    itemLinkedin.innerHTML= `<a href="https://www.linkedin.com/in/${value}" class="card__list--link fab fa-linkedin-in linkedin__icon" target="_blank">linkedin</a>`;
   }
 }
 
@@ -64,7 +64,7 @@ function printGithub (event) {
   if (value==='') {
     itemGithub.innerHTML='';
   } else {
-    itemGithub.innerHTML= `<a href="https://github.com/${value}" class="card__list--link fab fa-github-alt github__icon">github</a>`;
+    itemGithub.innerHTML= `<a href="https://github.com/${value}" class="card__list--link fab fa-github-alt github__icon" target="_blank">github</a>`;
   }
 }
 
