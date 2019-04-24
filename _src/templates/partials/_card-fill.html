@@ -1,25 +1,25 @@
-<article class="settings__fill">
-    <a id="fill" href="#" class="fill__first-box collapsible__title">
+<div class="settings__fill section__fieldset hidden__collapsible">
+    <div id="fill" href="#" class="fill__first-box collapsible__title">
         <div class="fill__title">
             <i class="fill__img far fa-keyboard"></i>
             <h2 class="fill__title--name">Rellena</h2>
         </div>
-        <i id="fill-arrow" class="arrow__fill fas fa-chevron-up"></i>
-    </a>
+        <i id="fill-arrow" class="fas fa-chevron-up arrow"></i>
+    </div>
     <div id="fill-container" class="fill__form collapsible__container">
         <fieldset class="fill__fieldset personal-data">
             <label for="fullName">Nombre completo</label>
-            <input class="input" placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName" required>
+            <input class="input-name" placeholder="Ej: Sally Jill" id="fullName" type="text" name="name" required>
 
             <label for="jobTitle">Puesto</label>
-            <input class="input1" placeholder="Ej: Front-end unicorn" id="jobTitle" type="text" name="jobTitle" required>
+            <input class="input-job" placeholder="Ej: Front-end unicorn" id="jobTitle" type="text" name="job" required>
         </fieldset>
         <fieldset class="fill__fieldset select-image">
             <label for="selectImage">Imagen de perfil</label>
             <div class="fill__select-image--container">
-              <button class="fill__select--button">Añadir imagen</button>
-              <input id="selectImage" type="file" accept=".png, .jpg, .jpeg" name="selectImage">
-                <div class="preview__image"></div>
+              <button class="fill__select--button js__profile-trigger" type="button">Añadir imagen</button>
+              <input id="selectImage" type="file" accept=".png, .jpg, .jpeg" name="selectImage" class="js__profile-upload-btn">
+              <div class="preview__image js__profile-preview"></div>
             </div>
         </fieldset>
         <fieldset class="fill__fieldset contact-data">
@@ -30,10 +30,10 @@
             <input placeholder="Ej: 555-55-55-55" id="phone" type="tel" name="phone">
 
             <label for="linkedin">Linkedin</label>
-            <input placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" type="text" name="linkedin">
+            <input placeholder="Ej: sally.hill" id="linkedin" type="text" name="linkedin">
 
             <label for="github">Github</label>
-            <input placeholder="Ej: @sally-hill" id="github" type="text" name="github">
+            <input placeholder="Ej: sally-hill" id="github" type="text" name="github">
         </fieldset>
     </div>
-</article>
+</div>

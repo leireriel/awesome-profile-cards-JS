@@ -1,26 +1,26 @@
 'use strict';
 
-let acc = document.querySelectorAll('.collapsible__title');
+const titleContainer = document.querySelectorAll('.collapsible__title');
+const sections = document.querySelectorAll('.section__fieldset');
 
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", collapse); 
+
+function collapsePlease(event) {
+    const culpable = event.currentTarget;
+   
+    if (culpable.parentElement.classList.contains('hidden__collapsible')) {
+        for (const section of sections) {
+          section.classList.add('hidden__collapsible');
+        }
+        culpable.parentElement.classList.remove('hidden__collapsible');
+    } else {
+        culpable.parentElement.classList.add('hidden__collapsible');
+    }
 }
 
-function collapse() {
-  let acc = document.querySelectorAll('.collapsible__title');
-  
-    for (let i = 0; i < acc.length; i++) {
-      let currentElement = acc[i];
-      let collapsibleContainer = 
-      document.querySelector('#'+currentElement.id+'-container');
-      let arrow = 
-      document.querySelector('#'+currentElement.id+'-arrow');
-      if (this.id === currentElement.id){
-          collapsibleContainer.style.maxHeight = collapsibleContainer.scrollHeight + "px";
-          arrow.classList.replace('fa-chevron-up', 'fa-chevron-down');
-      }else{
-        collapsibleContainer.style.maxHeight =  null;
-        arrow.classList.replace('fa-chevron-down', 'fa-chevron-up');
-      }
-    };
-  } 
+for (const container of titleContainer){
+    container.addEventListener('click', collapsePlease);
+}
+
+
+
+
