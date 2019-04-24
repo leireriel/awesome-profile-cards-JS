@@ -14,6 +14,8 @@ let imageToSave = "";
 const devImage = document.querySelector('.share__created--link');
 const shareTwitter = document.querySelector ('.twitter');
 
+
+
 function getUserInfostr() {
   const userInfo = {
     //:cheked es el atributo de radio
@@ -26,7 +28,7 @@ function getUserInfostr() {
     github: github1.value,
     photo: imageToSave
   }
-  console.log(userInfo);
+  
   const userInfostr = JSON.stringify(userInfo);
   localStorage.setItem('userInfo', userInfostr);
   return userInfostr;
@@ -78,7 +80,12 @@ function sendRequest(event){
     });
 }
 
+function resetUserInfo () {
+  localStorage.removeItem('userInfo');
+}
+
 submitButton.addEventListener('click', sendRequest);
+buttonReset.addEventListener('click', resetUserInfo);
 
 loadUserInfo();
 
