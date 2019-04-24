@@ -69,7 +69,8 @@ function sendRequest(event){
   })
     .then(response => response.json())
     .then(data => {
-      devImage.innerHTML = data.cardURL;
+      devImage.innerHTML = `<a href="${data.cardURL}" target="_blank">${data.cardURL}</a>`;
+      
       if (data.succes === false){
         console.log(data.error);
       }
