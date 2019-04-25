@@ -54,7 +54,7 @@ function loadUserInfo(){
    itemLinkedin.innerHTML= `<a href="https://www.linkedin.com/in/${userInfo.linkedin}" class="card__list--link fab fa-linkedin-in linkedin__icon" target="_blank">linkedin</a>`;
    itemGithub.innerHTML= `<a href="https://github.com/${userInfo.github}" class="card__list--link fab fa-github-alt github__icon" target="_blank">github</a>`;
    profileImage.style.backgroundImage = `url(${userInfo.photo})`;
-
+   imageToSave = userInfo.photo;
    const radios = document.querySelectorAll('.desidn__radio');
    for(const r of radios)
    {
