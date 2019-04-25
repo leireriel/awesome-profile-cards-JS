@@ -17,6 +17,7 @@ const shareTwitter = document.querySelector ('.twitter');
 
 
 function getUserInfostr() {
+
   const userInfo = {
     //:cheked es el atributo de radio
     palette: document.querySelector('.desidn__radio:checked').value,
@@ -36,9 +37,10 @@ function getUserInfostr() {
 
 function loadUserInfo(){
   const userInfostr = localStorage.getItem('userInfo');
-  if(userInfostr != null){
+  if(userInfostr !== null){
    const userInfo = JSON.parse(userInfostr);
 
+   changeColor(`option${userInfo.palette}`);
    fullName.value = userInfo.name;
    jobTitle.value = userInfo.job;
    phone1.value = userInfo.phone;
@@ -46,6 +48,7 @@ function loadUserInfo(){
    linkedin1.value = userInfo.linkedin;
    github1.value = userInfo.github;
    profilePreview.style.backgroundImage = `url(${userInfo.photo})`;
+   imageToSave = userInfo.photo;
 
    resultName.innerHTML = userInfo.name;
    resultJob.innerHTML = userInfo.job;
