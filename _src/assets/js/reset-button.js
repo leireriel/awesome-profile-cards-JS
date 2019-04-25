@@ -1,6 +1,5 @@
 'use strict';
 
-
 const fillForm = document.querySelector('.fill__form');
 const inputBoxes = fillForm.querySelectorAll('input');
 const buttonReset = document.querySelector('.card__reset');

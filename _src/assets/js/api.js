@@ -1,6 +1,6 @@
 'use strict';
 
-const submitButton = document.querySelector('.share__button'); //listener
+const submitButton = document.querySelector('.share__button');
 const responseURL = document.querySelector('.response'); 
 const field = document.querySelector('#field');
 const fullName = document.querySelector('#fullName');
@@ -15,11 +15,9 @@ const devImage = document.querySelector('.share__created--link');
 const shareTwitter = document.querySelector ('.twitter');
 
 
-
 function getUserInfostr() {
 
   const userInfo = {
-    //:cheked es el atributo de radio
     palette: document.querySelector('.desidn__radio:checked').value,
     name: fullName.value,
     job: jobTitle.value,
