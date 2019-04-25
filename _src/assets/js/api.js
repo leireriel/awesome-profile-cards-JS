@@ -1,6 +1,6 @@
 'use strict';
 
-const submitButton = document.querySelector('.share__button'); //listener
+const submitButton = document.querySelector('.share__button');
 const responseURL = document.querySelector('.response'); 
 const field = document.querySelector('#field');
 const fullName = document.querySelector('#fullName');
@@ -15,10 +15,9 @@ const devImage = document.querySelector('.share__created--link');
 const shareTwitter = document.querySelector ('.twitter');
 
 
-
 function getUserInfostr() {
+
   const userInfo = {
-    //:cheked es el atributo de radio
     palette: document.querySelector('.desidn__radio:checked').value,
     name: fullName.value,
     job: jobTitle.value,
@@ -36,9 +35,10 @@ function getUserInfostr() {
 
 function loadUserInfo(){
   const userInfostr = localStorage.getItem('userInfo');
-  if(userInfostr != null){
+  if(userInfostr !== null){
    const userInfo = JSON.parse(userInfostr);
 
+   changeColor(`option${userInfo.palette}`);
    fullName.value = userInfo.name;
    jobTitle.value = userInfo.job;
    phone1.value = userInfo.phone;
@@ -46,6 +46,7 @@ function loadUserInfo(){
    linkedin1.value = userInfo.linkedin;
    github1.value = userInfo.github;
    profilePreview.style.backgroundImage = `url(${userInfo.photo})`;
+   imageToSave = userInfo.photo;
 
    resultName.innerHTML = userInfo.name;
    resultJob.innerHTML = userInfo.job;
@@ -54,7 +55,7 @@ function loadUserInfo(){
    itemLinkedin.innerHTML= `<a href="https://www.linkedin.com/in/${userInfo.linkedin}" class="card__list--link fab fa-linkedin-in linkedin__icon" target="_blank">linkedin</a>`;
    itemGithub.innerHTML= `<a href="https://github.com/${userInfo.github}" class="card__list--link fab fa-github-alt github__icon" target="_blank">github</a>`;
    profileImage.style.backgroundImage = `url(${userInfo.photo})`;
-
+   imageToSave = userInfo.photo;
    const radios = document.querySelectorAll('.desidn__radio');
    for(const r of radios)
    {
