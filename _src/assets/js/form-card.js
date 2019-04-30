@@ -1,26 +1,21 @@
 'use strict';
 
-const inputName = document.querySelector('.input-name');
-const resultName =  document.querySelector('.resultName');
+const inputName = document.querySelector ('.input-name');
+const resultName = document.querySelector ('.resultName');
+const inputJob = document.querySelector ('.input-job');
+const resultJob = document.querySelector ('.resultJob');
 
-const addText = function textCard() {
-    if (inputName.value === '') {
-        resultName.innerHTML = 'No me borres 🐲';
-    } else {
-        resultName.innerHTML = inputName.value;
-    } 
+const textCard = (cardInfo, input, text) => {
+  if (input.value === '') {
+    cardInfo.innerHTML = `No me borres ${text}`;
+  } else {
+    cardInfo.innerHTML = input.value;
+  }
 };
-inputName.addEventListener('keyup', addText);
 
-const inputJob = document.querySelector('.input-job');
-const resultJob =  document.querySelector('.resultJob');
-
-const addText1 = function textCard1() {
-    if (inputJob.value === '') {
-        resultJob.innerHTML = 'No me borres 🌋';
-    } else {
-        resultJob.innerHTML = inputJob.value;
-    } 
-} 
-inputJob.addEventListener('keyup', addText1);
-
+inputName.addEventListener ('keyup', () => {
+  textCard (resultName, inputName, 'soy el nombre');
+});
+inputJob.addEventListener ('keyup', () => {
+  textCard (resultJob, inputJob, 'soy el trabajo');
+});
